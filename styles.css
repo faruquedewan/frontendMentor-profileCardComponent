@@ -28,13 +28,16 @@ body {
     background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
     background-repeat: no-repeat;
     background-size: 575px;
-    background-position: top -300px left -350px, bottom -300px right -350px;
-    background-attachment: fixed,  fixed;
+    /* background-position: top -300px left -350px, bottom -300px right -350px; */
+    background-position: bottom 50vh right 50vw, top 50vh left 50vw;
+    background-attachment: fixed;
 }
 
 main {
     max-width: 350px;
-    margin: 8.5rem 1.75rem;
+
+    margin: auto 1.75rem;
+    /* margin: 8.5rem 1.75rem; */
     border-radius: 15px;
     background-color: var(--white);
 }
@@ -119,8 +122,8 @@ h2 {
 
 /* Footer */
 footer { 
+    /* margin-top: auto; */
     color: var(--veryDarkDesaturatedBlue);
-    margin-top: auto;
     font-size: 11px; 
     text-align: center; 
 }
@@ -128,14 +131,4 @@ footer {
 footer a { 
     text-decoration: none;
     color: var(--white); 
-}
-
-@media screen and (min-width: 1000px) {
-    body {
-        background-size: 1040px;
-        background-position: top -500px left -350px, bottom -500px right -350px;
-    }
-    main {
-        margin-block: 13.5rem;
-    }
 }
